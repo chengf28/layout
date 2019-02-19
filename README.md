@@ -1,7 +1,7 @@
 # [简单易用的Layout弹出框][homepage]
 
 ## [BUG反馈及宝贵建议][issues]
-Github Issues: <https://github.com/chengf28/DBlite/issues>
+Github Issues: <https://github.com/chengf28/layout/issues>
 
 ## 开始 Start
 1. 在html中引入 js 文件
