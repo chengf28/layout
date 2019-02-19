@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script src="./src/layout.js"></script>
+<body>
+	<button>click</button>
+</body>
+<script>
+	var button = document.getElementsByTagName('button')[0];
+	button.onclick = function()
+	{
+		// 消息弹出
+		layout.alert('this is message');
+	};
+</script>
+</html>
