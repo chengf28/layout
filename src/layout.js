@@ -110,7 +110,8 @@ var layout = {
 	// 消息方法
 	alert: function (msg, config, ...func) {
 		var title = '消息';
-		var head_style = this.__style.box_head;
+		// 复制对象
+		var head_style = JSON.parse(JSON.stringify(this.__style.box_head));
 		var btn_name = ['确认'];
 		// 如果是对象,则判断
 		if (config) {
@@ -128,7 +129,7 @@ var layout = {
 							break;
 					}
 				}
-				for (key in this.__style.box_head) {
+				for (key in head_style ) {
 					if (config.hasOwnProperty(key)) {
 						head_style[key] = config[key];
 					}
