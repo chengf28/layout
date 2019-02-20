@@ -1,7 +1,7 @@
 var layout = {
 	__style:{
 		overflow:{
-			background       : 'black',
+			background       : 'rgba(0,0,0,0.6)',
 			width            : '100%',
 			height           : '100%',
 			position         : 'fixed',
@@ -10,7 +10,6 @@ var layout = {
 			right            : 0,
 			bottom           : 0,
 			"z-index"        : 10000,
-			opacity          : 0.6,
 			display          : 'flex',
 			'align-items'    : 'center',
 			'justify-content': 'center'
