@@ -197,10 +197,10 @@ var layout = {
 
 		}
 
-		// 延迟.001秒执行放大效果
+		// 延迟.01秒执行放大效果
 		setTimeout(function () {
 			box.style.transform = 'scale(1)';
-		}, 10);
+		}, 100);
 
 	},
 	close: function () {
