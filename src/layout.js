@@ -129,8 +129,8 @@ var layout = {
 					}
 				}
 				for (key in this.__style.box_head) {
-					if (msg.hasOwnProperty(key)) {
-						head_style[key] = msg[key];
+					if (config.hasOwnProperty(key)) {
+						head_style[key] = config[key];
 					}
 				}
 			}
