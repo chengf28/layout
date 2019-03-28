@@ -13,7 +13,9 @@
 	button.onclick = function()
 	{
 		// 消息弹出
-		layout.alert('this is message');
+		layout.alert('this is message',function(){
+			console.log('点击了按钮,触发回调');
+		});
 	};
 </script>
 </html>
