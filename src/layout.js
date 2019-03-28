@@ -67,8 +67,8 @@ var layout = {
 		}
 	},
 	__index: [],
-	overflow: function () {
-		var div = this.cElement('', this.__style.overflow, div, id = 'layout-overflow')
+	overflow: function (i) {
+		var div = this.cElement('', this.__style.overflow, div, id = 'layout-overflow'+i)
 		// document.body.appendChild(div);
 		return div;
 	},
@@ -148,7 +148,8 @@ var layout = {
 
 
 		// 添加遮罩层
-		var partent = this.overflow();
+		var partent = this.overflow(new Date().getTime());
+		
 		/* 生成dom元素 */
 		// 生成元素
 		var btn_array = [];
@@ -193,7 +194,7 @@ var layout = {
 				if (func[i]) {
 					func[i]();
 				}
-				layout.close();
+				layout.close(partent);
 			};
 
 		}
@@ -204,7 +205,8 @@ var layout = {
 		}, 100);
 
 	},
-	close: function () {
-		document.body.removeChild(document.getElementById('layout-overflow'));
+	close: function (partent) 
+	{
+		document.body.removeChild(partent);
 	}
 }
