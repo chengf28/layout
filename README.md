@@ -1,5 +1,5 @@
 # [简单易用的Layout弹出框][homepage]
-
+![for example](./forexample.gif)
 ## [BUG反馈及宝贵建议][issues]
 Github Issues: <https://github.com/chengf28/layout/issues>
 
@@ -43,6 +43,8 @@ background|与css设置相同
 color|与css设置相同
 btn|为数组形式,内容为对应按钮的字体,与按钮所触发的回调函数顺序一直['确认','取消]
 title|标题名字
+
+
 
 ## 开始你的coding吧
 
