@@ -30,9 +30,11 @@ var layout = {
 		},
 		box_body: {
 			'max-width' : '300px',
+			'max-height': '600px',
 			'word-wrap' : 'break-word',
 			'padding'   : '2rem 3rem',
 			'background': '#fff',
+			'overflow'  : 'auto',
 		},
 		box_foot: {
 			'padding'                   : '0 1rem 1rem 1rem',
